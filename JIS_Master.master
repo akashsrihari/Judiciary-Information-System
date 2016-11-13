@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="JIS_Master.master.cs" Inherits="JIS_Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <center>
+            <table>
+                <tr>
+                    <th>
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~\JIS.png" Height="100px" Width="100px"></asp:Image>
+                    </th>
+                    <th>
+                        <h1>Judiciary Information System</h1>
+                        <h3>powered by Hon&#39;ble Court of India
+                        </h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click"></asp:Button>
+                    </th>
+                </tr>
+            </table>
+            </center>
+            <hr />
+            <asp:ContentPlaceHolder ID="content_here" runat="server">
+            </asp:ContentPlaceHolder>
+            <h5><i>Contact Registrar for queries</i></h5>
+        </div>
+    </form>
+</body>
+</html>
